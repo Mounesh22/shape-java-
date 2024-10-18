@@ -1,0 +1,61 @@
+
+package shapedemo;
+class shape
+{
+    void draw()
+    {
+        System.out.println("drawing a shape");
+    }
+    void erase()
+    {
+        System.out.println("erasing a shape");
+    }
+}
+class circle extends shape
+{
+    void draw()
+    {
+        System.out.println("drawing a shape");
+    }
+    void erase()
+    {
+        System.out.println("erasing a shape");
+    }
+}
+class triangle extends shape
+{
+    void draw()
+    {
+        System.out.println("drawing a shape");
+    }
+    void erase()
+    {
+        System.out.println("erasing a shape");
+    }
+}
+class square extends shape
+{
+    void draw()
+    {
+        System.out.println("drawing a shape");
+    }
+    void erase()
+    {
+        System.out.println("erasing a shape");
+    }
+}
+public class Shapedemo {
+    public static void main(String[] args) 
+    {
+        shape[] s = new shape[3];
+         s[0]= new circle();
+         s[1]=new triangle();
+         s[2]=new square();
+         for (shape Shape :s)
+         {
+             Shape.draw();
+             Shape.erase();
+             System.out.println();
+         }
+    }
+}
